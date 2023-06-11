@@ -4,6 +4,7 @@ import 'package:ecommerce_app_frontend_in_flutter/core/routes.dart';
 import 'package:ecommerce_app_frontend_in_flutter/core/ui.dart';
 import 'package:ecommerce_app_frontend_in_flutter/logic/cubits/user_cubit/user_cubit.dart';
 import 'package:ecommerce_app_frontend_in_flutter/presentation/screens/auth/login_screen.dart';
+import 'package:ecommerce_app_frontend_in_flutter/presentation/screens/splash/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -34,7 +35,7 @@ class MyApp extends StatelessWidget {
         theme: Themes.defaultTheme,
         
         onGenerateRoute: Routes.onGenerateRoute,
-        initialRoute: LoginScreen.routeName,
+        initialRoute: SplashScreen.routeName,
         
       ),
     );
