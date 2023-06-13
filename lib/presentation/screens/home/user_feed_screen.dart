@@ -2,6 +2,8 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:ecommerce_app_frontend_in_flutter/core/ui.dart';
 import 'package:ecommerce_app_frontend_in_flutter/logic/product_cubit/product_cubit.dart';
 import 'package:ecommerce_app_frontend_in_flutter/logic/product_cubit/product_state.dart';
+import 'package:ecommerce_app_frontend_in_flutter/presentation/screens/product/category_product_screen.dart';
+import 'package:ecommerce_app_frontend_in_flutter/presentation/screens/product/product_details_screen.dart';
 import 'package:ecommerce_app_frontend_in_flutter/presentation/widgets/gap_widget.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -41,15 +43,18 @@ class _UserFeedScreenState extends State<UserFeedScreen> {
 
             final product = state.products[index];
             
-            return Padding(
-              padding: const EdgeInsets.only(top: 10),
+            return CupertinoButton(
+              onPressed: (){
+                 Navigator.pushNamed(context,ProductDetailsScreen.routeName,arguments:product);
+              },
+              padding: EdgeInsets.zero,
               child: Row(
                 children: [
                   CachedNetworkImage(
                       width: MediaQuery.of(context).size.width / 3,
                       imageUrl:"${product.images?[0]}"
                     ),
-            
+              
                           // 'https://rukminim1.flixcart.com/image/832/832/xif0q/mobile/2/s/7/-original-imagmg6gktts6sfy.jpeg?q=70'),
                   Flexible(
                     child: Column(
@@ -67,9 +72,9 @@ class _UserFeedScreenState extends State<UserFeedScreen> {
                               TextStyles.body2.copyWith(color: AppColors.textLight),
                               maxLines: 2,overflow:TextOverflow.ellipsis,
                         ),
-            
+              
                        const GapWidget(),
-            
+              
                         Text(
                           "${Formatter.formatPrice(product.price!)}",
                           style: TextStyles.heading3,
@@ -77,7 +82,7 @@ class _UserFeedScreenState extends State<UserFeedScreen> {
                       ],
                     ),
                   ),
-            
+              
                   IconButton(onPressed: (){}, icon:Icon(CupertinoIcons.cart))
                   
                 ],

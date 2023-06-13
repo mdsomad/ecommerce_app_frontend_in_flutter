@@ -1,5 +1,6 @@
 import 'package:ecommerce_app_frontend_in_flutter/logic/cubits/user_cubit/user_cubit.dart';
 import 'package:ecommerce_app_frontend_in_flutter/logic/cubits/user_cubit/user_state.dart';
+import 'package:ecommerce_app_frontend_in_flutter/presentation/screens/Cart/cart_screen.dart';
 import 'package:ecommerce_app_frontend_in_flutter/presentation/screens/home/category_screen.dart';
 import 'package:ecommerce_app_frontend_in_flutter/presentation/screens/home/profile_screen.dart';
 import 'package:ecommerce_app_frontend_in_flutter/presentation/screens/home/user_feed_screen.dart';
@@ -49,7 +50,7 @@ class _HomeScreenState extends State<HomeScreen> {
           actions: [
             IconButton(
               onPressed: () {
-                // Navigator.pushNamed(context, CartScreen.routeName);
+                Navigator.pushNamed(context, CartScreen.routeName);
               },
 
               icon: Icon(CupertinoIcons.cart_fill),
