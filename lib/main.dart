@@ -2,8 +2,11 @@ import 'dart:developer';
 
 import 'package:ecommerce_app_frontend_in_flutter/core/routes.dart';
 import 'package:ecommerce_app_frontend_in_flutter/core/ui.dart';
+import 'package:ecommerce_app_frontend_in_flutter/logic/category_cubit/category_cubit.dart';
 import 'package:ecommerce_app_frontend_in_flutter/logic/cubits/user_cubit/user_cubit.dart';
+import 'package:ecommerce_app_frontend_in_flutter/logic/product_cubit/product_cubit.dart';
 import 'package:ecommerce_app_frontend_in_flutter/presentation/screens/auth/login_screen.dart';
+import 'package:ecommerce_app_frontend_in_flutter/presentation/screens/home/home_screen.dart';
 import 'package:ecommerce_app_frontend_in_flutter/presentation/screens/splash/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -26,6 +29,8 @@ class MyApp extends StatelessWidget {
       providers: [
 
         BlocProvider(create: (context) => UserCubit()),
+        BlocProvider(create: (context) => CategoryCubit()),
+        BlocProvider(create: (context) => ProductCubit()),
 
       ],
       
@@ -36,8 +41,13 @@ class MyApp extends StatelessWidget {
         
         onGenerateRoute: Routes.onGenerateRoute,
         initialRoute: SplashScreen.routeName,
+
+
+
+        // home:HomeScreen() ,
         
       ),
+
     );
   }
 }

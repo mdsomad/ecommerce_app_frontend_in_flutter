@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:developer';
 
 import 'package:ecommerce_app_frontend_in_flutter/logic/cubits/user_cubit/user_cubit.dart';
 import 'package:ecommerce_app_frontend_in_flutter/logic/cubits/user_cubit/user_state.dart';
@@ -28,14 +29,20 @@ class _SplashScreenState extends State<SplashScreen> {
     if(userState is UserLoggedInState) {
       Navigator.popUntil(context, (route) => route.isFirst);
       Navigator.pushReplacementNamed(context, HomeScreen.routeName);
+      log('is UserLoggedInState');
+      //  Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => HomeScreen(),));
     }
     else if(userState is UserLoggedOutState) {
       Navigator.popUntil(context, (route) => route.isFirst);
       Navigator.pushReplacementNamed(context, LoginScreen.routeName);
+       log('is UserLoggedOutState');
+      //  Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => LoginScreen(),));
     }
     else if(userState is UserErrorState) {
       Navigator.popUntil(context, (route) => route.isFirst);
       Navigator.pushReplacementNamed(context, LoginScreen.routeName);
+      log('is UserErrorState');
+      // Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => LoginScreen(),));
     }
   }
 
@@ -58,7 +65,7 @@ class _SplashScreenState extends State<SplashScreen> {
       },
       child: const Scaffold(
           body: Center(
-            child: CircularProgressIndicator()
+            child: Text("SplashScreen")
           ),
       ),
     );
