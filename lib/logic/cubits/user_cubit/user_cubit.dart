@@ -20,6 +20,7 @@ final UserRepository _userRepository = UserRepository();
 
 
 
+ // TODO Create User _initialize function Local Save details get
   void _initialize() async {
     final userDetails = await Preferences.fetchUserDetails();
     String? email = userDetails["email"];
@@ -37,6 +38,8 @@ final UserRepository _userRepository = UserRepository();
 
 
 
+
+ // TODO Create User _emitLoggedInState function Local Save User details
   void _emitLoggedInState({
     required UserModel userModel,
     required String email,
@@ -49,7 +52,10 @@ final UserRepository _userRepository = UserRepository();
 
 
 
-   
+
+
+
+ // TODO Create User signIn function
   void signIn({
     required String email,
     required String password
@@ -69,7 +75,7 @@ final UserRepository _userRepository = UserRepository();
 
 
 
-
+// TODO Create User createAccount function
   void createAccount({
     required String email,
     required String password
@@ -85,9 +91,31 @@ final UserRepository _userRepository = UserRepository();
     }
   }
    
-   
-   
+  
 
+
+
+
+
+  // TODO Create updateUser function
+  Future<bool> updateUser(UserModel userModel) async {
+    emit( UserLoadingState() );
+    try {
+      UserModel updatedUser = await _userRepository.updateUser(userModel);
+      emit( UserLoggedInState(updatedUser) );
+      return true;
+    }
+    catch(ex) {
+      emit( UserErrorState(ex.toString()) );
+      return false;
+    }
+  }
+  
+  
+  
+  
+   
+// TODO Create User signOut function
   void signOut() async {
     await Preferences.clear();
     emit(UserLoggedOutState() );

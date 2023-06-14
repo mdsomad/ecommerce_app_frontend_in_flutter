@@ -36,7 +36,7 @@ class ProductRepository {
 
 
   //TODO: Create fetchProductsByCategory function 
-  Future<List<ProductModel>> fetchProductsByCategory(String categoryId) async {
+   Future<List<ProductModel>> fetchProductsByCategory(String categoryId) async {
     try {
       Response response = await _api.sendRequest.get("/product/category/$categoryId");
 
