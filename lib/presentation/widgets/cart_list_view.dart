@@ -1,6 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:ecommerce_app_frontend_in_flutter/data/models/cart/cart_item_model.dart';
-import 'package:ecommerce_app_frontend_in_flutter/logic/cart_cubit/cart_cubit.dart';
+import 'package:ecommerce_app_frontend_in_flutter/logic/cubits/cart_cubit/cart_cubit.dart';
 import 'package:ecommerce_app_frontend_in_flutter/logic/services/formatter.dart';
 import 'package:ecommerce_app_frontend_in_flutter/presentation/widgets/link_button.dart';
 import 'package:flutter/material.dart';

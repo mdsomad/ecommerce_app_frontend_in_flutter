@@ -1,8 +1,8 @@
 import 'dart:async';
 import 'dart:developer';
 
-import 'package:ecommerce_app_frontend_in_flutter/logic/cubits/user_cubit/user_cubit.dart';
-import 'package:ecommerce_app_frontend_in_flutter/logic/cubits/user_cubit/user_state.dart';
+import 'package:ecommerce_app_frontend_in_flutter/logic/user_cubit/user_cubit.dart';
+import 'package:ecommerce_app_frontend_in_flutter/logic/user_cubit/user_state.dart';
 import 'package:ecommerce_app_frontend_in_flutter/presentation/screens/auth/login_screen.dart';
 import 'package:ecommerce_app_frontend_in_flutter/presentation/screens/home/home_screen.dart';
 import 'package:flutter/material.dart';

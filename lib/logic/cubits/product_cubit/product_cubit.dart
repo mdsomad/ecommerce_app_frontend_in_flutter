@@ -1,5 +1,5 @@
 import 'package:ecommerce_app_frontend_in_flutter/data/repositories/product_repository.dart';
-import 'package:ecommerce_app_frontend_in_flutter/logic/product_cubit/product_state.dart';
+import 'package:ecommerce_app_frontend_in_flutter/logic/cubits/product_cubit/product_state.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 //TODO: Create ProductCubit Class

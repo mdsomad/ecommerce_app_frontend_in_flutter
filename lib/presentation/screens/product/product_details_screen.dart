@@ -1,8 +1,8 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:ecommerce_app_frontend_in_flutter/core/ui.dart';
 import 'package:ecommerce_app_frontend_in_flutter/data/models/product/product_model.dart';
-import 'package:ecommerce_app_frontend_in_flutter/logic/cart_cubit/cart_cubit.dart';
-import 'package:ecommerce_app_frontend_in_flutter/logic/cart_cubit/cart_state.dart';
+import 'package:ecommerce_app_frontend_in_flutter/logic/cubits/cart_cubit/cart_cubit.dart';
+import 'package:ecommerce_app_frontend_in_flutter/logic/cubits/cart_cubit/cart_state.dart';
 import 'package:ecommerce_app_frontend_in_flutter/logic/services/formatter.dart';
 import 'package:ecommerce_app_frontend_in_flutter/presentation/widgets/gap_widget.dart';
 import 'package:ecommerce_app_frontend_in_flutter/presentation/widgets/primary_button.dart';

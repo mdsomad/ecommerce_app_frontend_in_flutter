@@ -1,5 +1,5 @@
-import 'package:ecommerce_app_frontend_in_flutter/logic/category_cubit/category_cubit.dart';
-import 'package:ecommerce_app_frontend_in_flutter/logic/category_cubit/category_state.dart';
+import 'package:ecommerce_app_frontend_in_flutter/logic/cubits/category_cubit/category_cubit.dart';
+import 'package:ecommerce_app_frontend_in_flutter/logic/cubits/category_cubit/category_state.dart';
 import 'package:ecommerce_app_frontend_in_flutter/presentation/screens/product/category_product_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

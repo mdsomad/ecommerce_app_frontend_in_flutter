@@ -2,8 +2,8 @@ import 'dart:developer';
 
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:ecommerce_app_frontend_in_flutter/core/ui.dart';
-import 'package:ecommerce_app_frontend_in_flutter/logic/cart_cubit/cart_cubit.dart';
-import 'package:ecommerce_app_frontend_in_flutter/logic/cart_cubit/cart_state.dart';
+import 'package:ecommerce_app_frontend_in_flutter/logic/cubits/cart_cubit/cart_cubit.dart';
+import 'package:ecommerce_app_frontend_in_flutter/logic/cubits/cart_cubit/cart_state.dart';
 import 'package:ecommerce_app_frontend_in_flutter/logic/services/calculations.dart';
 import 'package:ecommerce_app_frontend_in_flutter/logic/services/formatter.dart';
 import 'package:ecommerce_app_frontend_in_flutter/presentation/screens/order/order_detail_screen.dart';

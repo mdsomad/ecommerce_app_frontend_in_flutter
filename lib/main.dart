@@ -2,11 +2,11 @@ import 'dart:developer';
 
 import 'package:ecommerce_app_frontend_in_flutter/core/routes.dart';
 import 'package:ecommerce_app_frontend_in_flutter/core/ui.dart';
-import 'package:ecommerce_app_frontend_in_flutter/logic/cart_cubit/cart_cubit.dart';
-import 'package:ecommerce_app_frontend_in_flutter/logic/category_cubit/category_cubit.dart';
-import 'package:ecommerce_app_frontend_in_flutter/logic/cubits/user_cubit/user_cubit.dart';
-import 'package:ecommerce_app_frontend_in_flutter/logic/order_cubit/order_cubit.dart';
-import 'package:ecommerce_app_frontend_in_flutter/logic/product_cubit/product_cubit.dart';
+import 'package:ecommerce_app_frontend_in_flutter/logic/cubits/cart_cubit/cart_cubit.dart';
+import 'package:ecommerce_app_frontend_in_flutter/logic/cubits/category_cubit/category_cubit.dart';
+import 'package:ecommerce_app_frontend_in_flutter/logic/user_cubit/user_cubit.dart';
+import 'package:ecommerce_app_frontend_in_flutter/logic/cubits/order_cubit/order_cubit.dart';
+import 'package:ecommerce_app_frontend_in_flutter/logic/cubits/product_cubit/product_cubit.dart';
 import 'package:ecommerce_app_frontend_in_flutter/presentation/screens/auth/login_screen.dart';
 import 'package:ecommerce_app_frontend_in_flutter/presentation/screens/home/home_screen.dart';
 import 'package:ecommerce_app_frontend_in_flutter/presentation/screens/splash/splash_screen.dart';

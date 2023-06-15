@@ -1,7 +1,7 @@
-import 'package:ecommerce_app_frontend_in_flutter/logic/cart_cubit/cart_cubit.dart';
-import 'package:ecommerce_app_frontend_in_flutter/logic/cart_cubit/cart_state.dart';
-import 'package:ecommerce_app_frontend_in_flutter/logic/cubits/user_cubit/user_cubit.dart';
-import 'package:ecommerce_app_frontend_in_flutter/logic/cubits/user_cubit/user_state.dart';
+import 'package:ecommerce_app_frontend_in_flutter/logic/cubits/cart_cubit/cart_cubit.dart';
+import 'package:ecommerce_app_frontend_in_flutter/logic/cubits/cart_cubit/cart_state.dart';
+import 'package:ecommerce_app_frontend_in_flutter/logic/user_cubit/user_cubit.dart';
+import 'package:ecommerce_app_frontend_in_flutter/logic/user_cubit/user_state.dart';
 import 'package:ecommerce_app_frontend_in_flutter/presentation/screens/Cart/cart_screen.dart';
 import 'package:ecommerce_app_frontend_in_flutter/presentation/screens/home/category_screen.dart';
 import 'package:ecommerce_app_frontend_in_flutter/presentation/screens/home/profile_screen.dart';

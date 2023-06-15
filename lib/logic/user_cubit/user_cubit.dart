@@ -1,7 +1,7 @@
 import 'dart:developer';
 import 'package:ecommerce_app_frontend_in_flutter/data/models/user/user_model.dart';
 import 'package:ecommerce_app_frontend_in_flutter/data/repositories/user_repository.dart';
-import 'package:ecommerce_app_frontend_in_flutter/logic/cubits/user_cubit/user_state.dart';
+import 'package:ecommerce_app_frontend_in_flutter/logic/user_cubit/user_state.dart';
 import 'package:ecommerce_app_frontend_in_flutter/logic/services/preferences.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

@@ -1,7 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:ecommerce_app_frontend_in_flutter/core/ui.dart';
-import 'package:ecommerce_app_frontend_in_flutter/logic/order_cubit/order_cubit.dart';
-import 'package:ecommerce_app_frontend_in_flutter/logic/order_cubit/order_state.dart';
+import 'package:ecommerce_app_frontend_in_flutter/logic/cubits/order_cubit/order_cubit.dart';
+import 'package:ecommerce_app_frontend_in_flutter/logic/cubits/order_cubit/order_state.dart';
 import 'package:ecommerce_app_frontend_in_flutter/logic/services/calculations.dart';
 import 'package:ecommerce_app_frontend_in_flutter/logic/services/formatter.dart';
 import 'package:ecommerce_app_frontend_in_flutter/presentation/widgets/gap_widget.dart';
@@ -75,7 +75,7 @@ class _MyOrderScreenState extends State<MyOrderScreen> {
                       style: TextStyles.body1
                           .copyWith(fontWeight: FontWeight.bold),
                     ),
-                    
+
                     ListView.builder(
                       physics: const NeverScrollableScrollPhysics(),
                       shrinkWrap: true,

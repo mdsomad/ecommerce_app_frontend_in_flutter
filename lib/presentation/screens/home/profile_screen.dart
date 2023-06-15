@@ -1,7 +1,7 @@
 import 'package:ecommerce_app_frontend_in_flutter/core/ui.dart';
 import 'package:ecommerce_app_frontend_in_flutter/data/models/user/user_model.dart';
-import 'package:ecommerce_app_frontend_in_flutter/logic/cubits/user_cubit/user_cubit.dart';
-import 'package:ecommerce_app_frontend_in_flutter/logic/cubits/user_cubit/user_state.dart';
+import 'package:ecommerce_app_frontend_in_flutter/logic/user_cubit/user_cubit.dart';
+import 'package:ecommerce_app_frontend_in_flutter/logic/user_cubit/user_state.dart';
 import 'package:ecommerce_app_frontend_in_flutter/presentation/screens/order/my_order_screen.dart';
 import 'package:ecommerce_app_frontend_in_flutter/presentation/screens/user/edit_profile_screen.dart';
 import 'package:ecommerce_app_frontend_in_flutter/presentation/widgets/link_button.dart';

@@ -2,9 +2,9 @@ import 'dart:async';
 import 'package:ecommerce_app_frontend_in_flutter/data/models/cart/cart_item_model.dart';
 import 'package:ecommerce_app_frontend_in_flutter/data/models/product/product_model.dart';
 import 'package:ecommerce_app_frontend_in_flutter/data/repositories/cart_repository.dart';
-import 'package:ecommerce_app_frontend_in_flutter/logic/cart_cubit/cart_state.dart';
-import 'package:ecommerce_app_frontend_in_flutter/logic/cubits/user_cubit/user_cubit.dart';
-import 'package:ecommerce_app_frontend_in_flutter/logic/cubits/user_cubit/user_state.dart';
+import 'package:ecommerce_app_frontend_in_flutter/logic/cubits/cart_cubit/cart_state.dart';
+import 'package:ecommerce_app_frontend_in_flutter/logic/user_cubit/user_cubit.dart';
+import 'package:ecommerce_app_frontend_in_flutter/logic/user_cubit/user_state.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class CartCubit extends Cubit<CartState> {

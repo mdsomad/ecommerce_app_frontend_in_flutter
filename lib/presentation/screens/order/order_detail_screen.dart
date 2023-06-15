@@ -3,11 +3,11 @@ import 'dart:developer';
 import 'package:ecommerce_app_frontend_in_flutter/core/ui.dart';
 import 'package:ecommerce_app_frontend_in_flutter/data/models/order/order_model.dart';
 import 'package:ecommerce_app_frontend_in_flutter/data/models/user/user_model.dart';
-import 'package:ecommerce_app_frontend_in_flutter/logic/cart_cubit/cart_cubit.dart';
-import 'package:ecommerce_app_frontend_in_flutter/logic/cart_cubit/cart_state.dart';
-import 'package:ecommerce_app_frontend_in_flutter/logic/cubits/user_cubit/user_cubit.dart';
-import 'package:ecommerce_app_frontend_in_flutter/logic/cubits/user_cubit/user_state.dart';
-import 'package:ecommerce_app_frontend_in_flutter/logic/order_cubit/order_cubit.dart';
+import 'package:ecommerce_app_frontend_in_flutter/logic/cubits/cart_cubit/cart_cubit.dart';
+import 'package:ecommerce_app_frontend_in_flutter/logic/cubits/cart_cubit/cart_state.dart';
+import 'package:ecommerce_app_frontend_in_flutter/logic/user_cubit/user_cubit.dart';
+import 'package:ecommerce_app_frontend_in_flutter/logic/user_cubit/user_state.dart';
+import 'package:ecommerce_app_frontend_in_flutter/logic/cubits/order_cubit/order_cubit.dart';
 import 'package:ecommerce_app_frontend_in_flutter/logic/services/razorpay.dart';
 import 'package:ecommerce_app_frontend_in_flutter/presentation/screens/order/order_placed_screen.dart';
 import 'package:ecommerce_app_frontend_in_flutter/presentation/screens/order/providers/order_detail_provider.dart';
@@ -154,7 +154,7 @@ class _OrderDetailScreenState extends State<OrderDetailScreen> {
                     newOrder,
 
                    onSuccess: (response) async {
-                    
+
                       newOrder.status = "order-placed";
                                                                           //* updateOrder function call
                       bool success = await BlocProvider.of<OrderCubit>(context).updateOrder(
