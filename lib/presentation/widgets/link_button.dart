@@ -20,7 +20,7 @@ class LinkButton extends StatelessWidget {
       onPressed: onPressed,
       padding: EdgeInsets.zero,
       child: Text(text, style: TextStyle(
-        color: color ?? AppColors.accent
+         color: color ?? AppColors.accent
       ),),
     );
   }
