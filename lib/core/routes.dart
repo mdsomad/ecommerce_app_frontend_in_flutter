@@ -7,6 +7,10 @@ import 'package:ecommerce_app_frontend_in_flutter/presentation/screens/auth/prov
 import 'package:ecommerce_app_frontend_in_flutter/presentation/screens/auth/providers/signup_provider.dart';
 import 'package:ecommerce_app_frontend_in_flutter/presentation/screens/auth/signup_screen.dart';
 import 'package:ecommerce_app_frontend_in_flutter/presentation/screens/home/home_screen.dart';
+import 'package:ecommerce_app_frontend_in_flutter/presentation/screens/order/my_order_screen.dart';
+import 'package:ecommerce_app_frontend_in_flutter/presentation/screens/order/order_detail_screen.dart';
+import 'package:ecommerce_app_frontend_in_flutter/presentation/screens/order/order_placed_screen.dart';
+import 'package:ecommerce_app_frontend_in_flutter/presentation/screens/order/providers/order_detail_provider.dart';
 import 'package:ecommerce_app_frontend_in_flutter/presentation/screens/product/category_product_screen.dart';
 import 'package:ecommerce_app_frontend_in_flutter/presentation/screens/product/product_details_screen.dart';
 import 'package:ecommerce_app_frontend_in_flutter/presentation/screens/splash/splash_screen.dart';
@@ -61,6 +65,22 @@ class Routes {
         builder: (context) => const EditProfileScreen()
       );
 
+       case OrderDetailScreen.routeName: return CupertinoPageRoute(
+        builder: (context) => ChangeNotifierProvider(
+          create: (context) => OrderDetailProvider(),
+          child: const OrderDetailScreen()
+        )
+      );
+
+
+     case OrderPlacedScreen.routeName: return CupertinoPageRoute(
+        builder: (context) => const OrderPlacedScreen()
+      );
+
+
+      case MyOrderScreen.routeName: return CupertinoPageRoute(
+        builder: (context) => const MyOrderScreen()
+      );
 
 
 

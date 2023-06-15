@@ -5,6 +5,7 @@ import 'package:ecommerce_app_frontend_in_flutter/core/ui.dart';
 import 'package:ecommerce_app_frontend_in_flutter/logic/cart_cubit/cart_cubit.dart';
 import 'package:ecommerce_app_frontend_in_flutter/logic/category_cubit/category_cubit.dart';
 import 'package:ecommerce_app_frontend_in_flutter/logic/cubits/user_cubit/user_cubit.dart';
+import 'package:ecommerce_app_frontend_in_flutter/logic/order_cubit/order_cubit.dart';
 import 'package:ecommerce_app_frontend_in_flutter/logic/product_cubit/product_cubit.dart';
 import 'package:ecommerce_app_frontend_in_flutter/presentation/screens/auth/login_screen.dart';
 import 'package:ecommerce_app_frontend_in_flutter/presentation/screens/home/home_screen.dart';
@@ -34,6 +35,11 @@ class MyApp extends StatelessWidget {
         BlocProvider(create: (context) => ProductCubit()),
         BlocProvider(create: (context) => CartCubit(
           BlocProvider.of<UserCubit>(context)           //* <-- Send _userCubit 
+        )),
+
+        BlocProvider(create: (context) => OrderCubit(
+          BlocProvider.of<UserCubit>(context),
+          BlocProvider.of<CartCubit>(context),
         )),
 
       ],

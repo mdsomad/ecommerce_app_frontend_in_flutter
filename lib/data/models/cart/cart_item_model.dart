@@ -13,6 +13,9 @@ class CartItemModel {
     sId = json['_id'];
   }
 
+
+
+
   Map<String, dynamic> toJson({
     bool objectMode = false
   }) {

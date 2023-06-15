@@ -122,6 +122,10 @@ class CartCubit extends Cubit<CartState> {
     return false;
   }
   
+
+
+
+  // TODO: Create clearCart function
   void clearCart() {
     emit(CartLoadedState([]) );
   }
